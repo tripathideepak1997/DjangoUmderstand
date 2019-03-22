@@ -19,5 +19,6 @@ from new_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.order,name='index')
+    path('',views.order,name='index'),
+    path('str_to_upper/',views.string_to_upper_converter,name = 's_t_u'),
 ]
