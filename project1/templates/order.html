@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+</head>
+<body>
+
+        <p><em>The name of the person is : {{p_n}}</em></p>
+        <ol>
+        {% for items in o_l %}
+            <li>{{items}}</li>
+            {% endfor %}
+        </ol>
+        {% if o_w %}
+        <p>The order is under warranty</p>
+        {% else %}
+        <p>The order is not under warranty</p>
+        {% endif %}
+
+</body>
+</html>
